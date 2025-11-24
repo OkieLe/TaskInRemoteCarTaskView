@@ -13,4 +13,15 @@
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+    <style name="Theme.MinusOne" parent="Theme.TaskInTaskView">
+    </style>
+    <style name="EmbeddedAnimationStyle" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@android:anim/fade_out</item>
+    </style>
+    <style name="Theme.MinusTwo" parent="Theme.TaskInTaskView">
+        <item name="android:windowAnimationStyle">@style/EmbeddedAnimationStyle</item>
+    </style>
 </resources>
